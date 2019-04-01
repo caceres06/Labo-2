@@ -19,32 +19,32 @@ public class Labo2 {
     public static void main(String[] args) {
         Cliente c = new Cliente();
         Scanner key = new Scanner(System.in);
-        
+        Producto p = new Producto();
         System.out.println("Ingrese su nombre");
         c.setNombre(key.nextLine());
         System.out.println("Ingrese apellido");
         c.setApellido(key.nextLine());
         System.out.println("Ingrese su telefono");
         c.setTel(key.nextInt());       
-        int aux=0;
+        int aux;
         System.out.println("Seleccion una opción");
         System.out.println("1.Ingresar prodcutos:");
         System.out.println("2.Listar productos");
         System.out.println("3.Calcular el total a pagar:");
         System.out.println("4.Generar Factura:");
         System.out.println("5. Salir");
+        aux= key.nextInt();
         switch(aux){
             case 1:
-                IngresoProducto();
+                p.IngresoProducto();
                 break;
             case 2:
-                ListarProducto();
+                
                 break;
             case 3:
-                TotalPagar();
                 break;
             case 4:
-                Factura();
+                c.Factura();
                 break;
             case 5:
                 break;
@@ -52,22 +52,5 @@ public class Labo2 {
         
     }
 
-    private static void Factura() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private static void TotalPagar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private static void ListarProducto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private static void IngresoProducto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
    
-    
  }
-

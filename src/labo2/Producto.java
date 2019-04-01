@@ -21,6 +21,13 @@ public class Producto {
         this.precio = precio;
         this.cantidad = cantidad;
     }
+    public Producto() {
+        this.nombre = null;
+        this.tipo = null;
+        this.precio = 0;
+        this.cantidad = 0;
+    }
+    boolean p = true;
 
     public String getNombre() {
         return nombre;
@@ -55,13 +62,9 @@ public class Producto {
     }
     
      public void IngresoProducto(){
-        
-    }
-    public void ListarProducto(){
-        
-    }
-    public void TotalPagar(){
-        
-    }
+        do{
+         
+     } while(p);
     
-}
+     }
+}  
