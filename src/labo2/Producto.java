@@ -12,10 +12,10 @@ package labo2;
 public class Producto {
     private String nombre;
     private String tipo;
-    private int precio;
+    private float precio;
     private int cantidad;
 
-    public Producto(String nombre, String tipo, int precio, int cantidad) {
+    public Producto(String nombre, String tipo, float precio, int cantidad) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
@@ -27,7 +27,6 @@ public class Producto {
         this.precio = 0;
         this.cantidad = 0;
     }
-    boolean p = true;
 
     public String getNombre() {
         return nombre;
@@ -45,14 +44,6 @@ public class Producto {
         this.tipo = tipo;
     }
 
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
-
     public int getCantidad() {
         return cantidad;
     }
@@ -60,11 +51,13 @@ public class Producto {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
     
-     public void IngresoProducto(){
-        do{
-         
-     } while(p);
-    
-     }
-}  
+     } 

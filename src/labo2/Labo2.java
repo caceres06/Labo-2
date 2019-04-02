@@ -19,13 +19,7 @@ public class Labo2 {
     public static void main(String[] args) {
         Cliente c = new Cliente();
         Scanner key = new Scanner(System.in);
-        Producto p = new Producto();
-        System.out.println("Ingrese su nombre");
-        c.setNombre(key.nextLine());
-        System.out.println("Ingrese apellido");
-        c.setApellido(key.nextLine());
-        System.out.println("Ingrese su telefono");
-        c.setTel(key.nextInt());       
+        boolean bandera = true;
         int aux;
         System.out.println("Seleccion una opción");
         System.out.println("1.Ingresar prodcutos:");
@@ -34,23 +28,22 @@ public class Labo2 {
         System.out.println("4.Generar Factura:");
         System.out.println("5. Salir");
         aux= key.nextInt();
-        switch(aux){
-            case 1:
-                p.IngresoProducto();
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                break;
-            case 4:
-                c.Factura();
-                break;
-            case 5:
-                break;
-        }
         
-    }
-
-   
+            switch(aux){
+                case 1:
+                    c.Ingresar();
+                    break;
+                case 2:
+                    c.ListaProducto(c);
+                    break;
+                case 3:
+                    c.TotalPagar(c);
+                    break;
+                case 4:
+                    c.Factura(c);
+                    break;
+                case 5:
+                    break;
+        }
  }
+}
